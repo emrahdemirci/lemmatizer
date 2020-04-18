@@ -1,14 +1,27 @@
 # lemmatizer
 
+  
+
 Lemmatizer for text in English. Inspired by Python&#x27;s nltk.corpus.reader.wordnet.morphy
+## Installing:
+In your pubspec.yaml
+```yaml
+dependencies:
+  lemmatizer: ^0.0.1
+```
+```dart
+import  'package:lemmatizer/lemmatizer.dart';
+```
 
-## Getting Started
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+## Basic Usage:
+```dart
+Lemmatizer lemmatizer =  new  Lemmatizer();
+...
+_text = lemmatizer.lemma(_controller.text);
+```
+<br>
+<br>
+   
+## License
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details
