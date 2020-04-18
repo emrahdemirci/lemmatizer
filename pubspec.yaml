@@ -1,8 +1,8 @@
 name: lemmatizer
 description: Lemmatizer for text in English. Inspired by Python&#x27;s nltk.corpus.reader.wordnet.morphy
 version: 0.0.1
-author:
-homepage: www.gooogle.com
+#author: emrahdemirci <csemrahdemirci@gmail.com>
+homepage: https://github.com/emrahdemirci/lemmatizer
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
