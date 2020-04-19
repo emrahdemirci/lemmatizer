@@ -2,12 +2,12 @@
 
   
 
-Lemmatizer for text in English. Inspired by Python&#x27;s nltk.corpus.reader.wordnet.morphy
+Lemmatizer for text in English. Inspired by Python's nltk.corpus.reader.wordnet.morphy
 ## Installing:
 In your pubspec.yaml
 ```yaml
 dependencies:
-  lemmatizer: ^0.0.1
+  lemmatizer: ^1.0.0
 ```
 ```dart
 import  'package:lemmatizer/lemmatizer.dart';
