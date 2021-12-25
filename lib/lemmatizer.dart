@@ -63,7 +63,7 @@ class Lemmatizer {
     }
   }
 
-  String lemma(form, {String pos}) {
+  String lemma(form, {String? pos}) {
     var words = ["verb", "noun", "adj", "adv", "abbr"];
     if (!words.contains(pos)) {
       for (var item in words) {
@@ -128,13 +128,13 @@ class Lemmatizer {
       return lemma;
     }
 
-    var lst = MORPHOLOGICAL_SUBSTITUTIONS[pos];
+    var lst = MORPHOLOGICAL_SUBSTITUTIONS[pos]!;
     for (var item in lst) {
       var _old = item[0];
       var _new = item[1];
       if (form.endsWith(_old)) {
         var res = eachSubstitutions(
-            form.substring(0, form.length - _old.length) + _new, pos);
+            form.substring(0, form.length - _old.length as int?) + _new, pos);
         if (res != null) {
           return res;
         }
@@ -142,7 +142,7 @@ class Lemmatizer {
     }
   }
 
-  POS strToPos(String str) {
+  POS strToPos(String? str) {
     switch (str) {
       case "n":
       case "noun":

@@ -17,9 +17,9 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+  MyHomePage({Key? key, this.title}) : super(key: key);
 
-  final String title;
+  final String? title;
 
   @override
   _MyHomePageState createState() => _MyHomePageState();
@@ -28,7 +28,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   String _text = "";
   Lemmatizer lemmatizer = new Lemmatizer();
-  TextEditingController _controller;
+  TextEditingController? _controller;
   @override
   void initState() {
     _controller = new TextEditingController();
@@ -37,7 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _lemmatize() {
     setState(() {
-      _text = lemmatizer.lemma(_controller.text);
+      _text = lemmatizer.lemma(_controller!.text);
     });
   }
 
@@ -45,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text(widget.title!),
       ),
       body: Center(
         child: Padding(
