@@ -1,6 +1,6 @@
 # lemmatizer
 ## This project is discontinued. Suggested replacement :github.com/xErik/lemmatizerx
-  
+### pub.dev : https://pub.dev/packages/lemmatizer
 
 Lemmatizer for text in English. Inspired by Python's nltk.corpus.reader.wordnet.morphy
 ## Installing:
